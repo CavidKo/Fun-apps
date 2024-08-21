@@ -1,0 +1,154 @@
+{
+	"QMainWindow":[
+		{
+			"title":"Modern UI",
+			"icon":"::/images/logopng.png",
+			"frameless": true,
+			"translucentBg": true,
+			"sizeGrip": "size_Grip",
+			"navigation":[
+				{
+					"minimize":"minimizeBtn",
+					"close": "closeBtn",
+					"restore":[
+						{
+							"buttonName": "restoreBtn",
+							"normalIcon": ":/icons/icons/square.svg",
+							"maximizedIcon": ":/icons/icons/copy.svg"
+						}
+					],
+					"moveWindow": "headerContainer",
+					"tittleBar": "headerContainer"
+				}
+			]
+		}
+	],
+	"QCustomSlideMenu": [
+			{
+			"name": "LeftMenuContainer",
+			"defaultSize": [{
+				"width": 45,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 45,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 200,
+				"height": "parent"
+			}],
+			"toggleButton": [{
+				"buttonName": "menuBtn",
+				"icons": [{
+					"whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+					"whenMenuIsExpanded": ":/icons/icons/chevron-left.svg"
+				}]
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+			"name": "CenterMenuContainer",
+			"defaultSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 200,
+				"height": "parent"
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}]
+		}
+	],
+	"QStackedWidget": [
+		{
+			"name": "mainStackWidget",
+			"navigation": [
+				{
+					"navigationButtons": [
+						{
+							"homeBtn": "page",
+							"calendarBtn": "page_2",
+							"binarySearchBtn": "page_3",
+							"wordGBtn": "page_4",
+							"recorderBtn": "page_5",
+							"colorGameBtn": "page_8",
+							"whatsappBtn": "page_15"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "leftStackedWidget",
+			"navigation": [
+				{
+					"navigationButtons": [
+						{
+							"informationBtn": "page_6",
+							"helpBtn": "page_7"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "mmStackedWidget",
+			"navigation": [
+				{
+					"navigationButtons": [
+						{
+							"calendarAppBtn": "page_9",
+							"binarySearchAppBtn": "page_10",
+							"wordGuessingGameBtn": "page_11",
+							"voiceRecorderApp": "page_12",
+							"colorMatchingGameBtn": "page_13",
+							"whatsappBotApp": "page_14"
+						}
+					]
+				}
+			]
+		}
+	],
+	"QPushButtonGroup": [
+		{
+			"Buttons": [
+				"homeBtn",
+				"calendarBtn",
+				"binarySearchBtn",
+				"wordGBtn",
+				"recorderBtn",
+				"colorGameBtn",
+				"whatsappBtn"
+			],
+			"Style": [
+				{
+					"Active": "background-color: #1f232a;",
+					"NoActive": ""
+				}
+			]
+		},
+		{
+			"Buttons": [
+				"informationBtn",
+				"helpBtn"
+			],
+			"Style": [
+				{
+					"Active": "background-color: #1f232a;",
+					"NoActive": ""
+				}
+			]
+		}
+	]
+}
